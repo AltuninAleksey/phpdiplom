@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #f5f6f9;
+}
+nav{
+    display: flex;
+    height: 50px;
+    background-color: #2f313d;
+}
+.container{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    max-width: 1600px;
+}
+.bell{
+    margin-right: 0;
+    margin-left: auto;
+    width: 25px;
+    height: 25px;
+}
+nav .container .main a{
+    text-decoration: none;
+    color: #fff;
+
+}
+.mainblock{
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 505px;
+    width: 460px;
+    background-color: #fff;
+    border-radius: 3%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.mainblock .vxod{
+    padding-top: 30px;
+   text-align: center;
+    font-size: 22pt;
+    font-weight: bold;
+}
+.mainblock .login{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 16pt;
+    font-family: Arial;
+    margin-bottom: 10px;
+}
+.mainblock form input{
+    padding-left: 10px;
+    height: 30px;
+    margin-left: 5%;
+    width: 90%;
+    border: solid 1px;
+    border-radius: 5px;
+}
+.mainblock .password{
+    padding-top: 30px;
+    text-align: center;
+    font-size: 16pt;
+    font-family: Arial;
+    margin-bottom: 10px;
+}
+.mainblock form .passwordbutton{
+    height: 30px;
+    margin-top: 30px;
+    margin-left: 8%;
+    width: 85%;
+    border: solid 0px;
+    border-radius: 15px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+.mainblock .forstudent{
+    text-align: center;
+    padding-top: 30px;
+    font-weight: bold;
+    font-size: 16pt;
+    font-family: Arial;
+}
+.mainblock .forgotpassword {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 12pt;
+    font-family: Arial;
+    
+}
+.mainblock .forgotpassword a{
+    text-decoration: none;
+}
+.mainblock .registration{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 12pt;
+    font-family: Arial;
+}
+.mainblock .registration a{
+    text-decoration: none;
+}
+
+/*Start Profile*/
