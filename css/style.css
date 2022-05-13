@@ -237,7 +237,15 @@ fieldset .count{
     position: absolute;
     right: 5px;
 }
-/*Место для свайпера*/
+.menu_block:hover{
+    background-color: #fff;
+    color: #BA0D0D;
+    cursor: pointer;
+}
+.menu_block svg{
+    background: rgba(0, 0, 0, 0);
+    
+}
 .slider{
     position: relative;
     margin-top: 15px;
