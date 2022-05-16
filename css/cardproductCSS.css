@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+*,::after,::before{
+    box-sizing: content-box !important;
+}
+a{
+  text-decoration: none;  
+  color: #000;
+}
+.background{
+    background-color: #E5E5E5;
+    padding-bottom: 60px;
+}
+
+
+/*1 страница*/
+.page1{
+    padding-top: 30px;
+    background-color: #E5E5E5;
+
+}
+
+
+
+
+
+
+
+.technic{
+    width: 100%;
+    background-color: #fff;
+    margin-left: 20px;
+}
+
+.info{
+    padding-top: 150px;
+    margin: 20px;
+}
+.info .text{
+    font-family: Nunito Sans;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 39px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+
+.info .price{
+    font-family: Nunito Sans;
+    font-size: 26px;
+    font-weight: 800;
+    line-height: 36px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.count_button{
+    display: flex;
+}
+.count_button .count{
+    width: 160px;
+    height: 50px;
+    background: #F2F2F2;
+
+}
+.count_button button{
+    width: 262px;
+    height: 50px;
+    background: linear-gradient(180deg, #DB1414 0%, #BA0D0D 100%);
+    color: #fff;
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 17px;
+    letter-spacing: 0em;
+    text-align: center;
+    border: 0;
+    border-radius: 6px;
+}
+.conectus{
+    margin-top: 20px;
+    display: flex;
+}
+.conectus svg{
+    margin-right: 15px;
+}
+
+.slider-for{
+    margin: 30px 20px;
+    max-width: 550px;
+    min-width: 500px; 
+}
+
+.technic{
+    display: flex;
+}
+.product2 .slick-slide{
+    height: 150px !important; 
+}
+.slick-slide{
+    height: 150px;
+}
+
+.conectus .text_conectus{
+    font-family: Nunito Sans;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+.slider-for img{
+    height: 550px ;    
+}
+
+
+
