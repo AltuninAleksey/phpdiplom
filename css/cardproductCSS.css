@@ -1,44 +1,60 @@
-*{
-    margin: 0;
-    padding: 0;
+
+.menuandslider{
+    margin-top: 20px;
+    display: flex;
 }
 *,::after,::before{
     box-sizing: content-box !important;
 }
-a{
-  text-decoration: none;  
-  color: #000;
+
+.menu *{
+    position: relative;
+    padding-top: 40px;
+    width: 226px;
+    background-color: #535050;
+    color: #fff;
+    font-family: Nunito Sans;
+    font-size: 17px;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 0.01em;
+    text-align: left;
 }
-.background{
-    background-color: #E5E5E5;
-    padding-bottom: 60px;
+.menu *:not(:last-child,svg){
+    border-bottom: 1px solid #5F5F5F; ;
 }
-
-
-/*1 страница*/
-.page1{
-    padding-top: 30px;
-    background-color: #E5E5E5;
-
+.menu svg{
+    padding-top: 0;
+    margin-top: 0;
+    width: 34px;
+    height: 20px;
+    margin-bottom: 5px;
+    margin-right: 14px;
+    margin-left: 20px;  
 }
-
-
-
-
-
-
+.menu .arrow{
+    width: 10px;
+    position: absolute;
+    right: 5px;
+}
 
 .technic{
+    margin-top: 20px;
     width: 100%;
+    height: 100%;
     background-color: #fff;
     margin-left: 20px;
+    padding-bottom: 245px;
 }
+.technic .slider-nav{
 
-.info{
-    padding-top: 150px;
+    width: 600px;
+}
+.info{  
     margin: 20px;
 }
 .info .text{
+    margin-top: 50px;
     font-family: Nunito Sans;
     font-size: 28px;
     font-weight: 700;
@@ -47,8 +63,8 @@ a{
     text-align: left;
 }
 
-
 .info .price{
+    margin-top: 10px;
     font-family: Nunito Sans;
     font-size: 26px;
     font-weight: 800;
@@ -56,16 +72,9 @@ a{
     letter-spacing: 0em;
     text-align: left;
 }
-.count_button{
-    display: flex;
-}
-.count_button .count{
-    width: 160px;
-    height: 50px;
-    background: #F2F2F2;
 
-}
 .count_button button{
+    margin-top: 10px;
     width: 262px;
     height: 50px;
     background: linear-gradient(180deg, #DB1414 0%, #BA0D0D 100%);
@@ -84,25 +93,41 @@ a{
     display: flex;
 }
 .conectus svg{
-    margin-right: 15px;
+    margin-right: 10px;
 }
-
 .slider-for{
     margin: 30px 20px;
     max-width: 550px;
-    min-width: 500px; 
+    min-width: 500px;
 }
+
 
 .technic{
     display: flex;
-}
-.product2 .slick-slide{
-    height: 150px !important; 
-}
-.slick-slide{
-    height: 150px;
+   
 }
 
+.maintextpage{
+    font-family: Nunito Sans;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 20px 20px;
+    
+}
+.technic .maintext{
+    font-family: Nunito Sans;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 50px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 40px;
+    margin-left: 20px;
+
+}
 .conectus .text_conectus{
     font-family: Nunito Sans;
     font-size: 14px;
@@ -110,10 +135,30 @@ a{
     line-height: 14px;
     letter-spacing: 0em;
     text-align: left;
+
 }
-.slider-for img{
-    height: 550px ;    
+.maintextpage{
+    display: flex;
+}
+.maintextpage .color{
+    color: #9b9b9b;
 }
 
 
+.product1 img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.product2{
+    margin: 10px;
+    width: 200px;
+    height:200px;
+}
+.product2 img{
+    width: 100%;
+    height: 130px;
+    object-fit: cover;
+
+}
 
