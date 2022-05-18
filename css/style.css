@@ -62,7 +62,7 @@ nav .container{
     min-width: 122px;
     width: 122px;
     height: 80px;
-    background: url("../img/logo.png");
+    background: url("../img/logo.png") center no-repeat;
 }
 .head .topblock .text{
     margin-left: 30px;
