@@ -100,6 +100,7 @@
 }
 .product img{
     max-width: 268px;
+    min-height: 200px;
     max-height: 200px;
     margin: 20px;
 }
