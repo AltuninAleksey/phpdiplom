@@ -89,7 +89,7 @@
   
 
     <div class="vxod">Вход</div>
-    <div class="login">Логин(для обучающихся E-mail):</div>
+    <div class="login">Логин:</div>
 
     <form action="check.php" method="post">
         <input type="text" placeholder="Логин" name="login">
@@ -100,7 +100,7 @@
         <button type="submit" class="passwordbutton"> ВХОД </button>
     </form>
 
-    <div class="forstudent">Для обучающихся:</div>
+
     <div class="forgotpassword"><a href="#" >Забыли пароль?</a></div> 
     <div class="registration">Не зарегистрированы? <a href="">зарегистрироваться</a></div>
     <?php
@@ -113,9 +113,6 @@ else:
 
 </div>
 </div>
-
-
-
 
 <?php
 endif;

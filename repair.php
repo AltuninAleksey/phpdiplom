@@ -1,6 +1,5 @@
 <?php
     include "nav.php";
-
 ?>
 
 <link rel="stylesheet" href="css/style_catalog.css">
@@ -87,25 +86,25 @@
                                 <div class="product">
                                     <img src="img/kvadro.jpg" alt="">
                                     <div class="text">Сход развал</div>
-                                    <button onclick="location.href='index.php';">ПОДРОБНЕЕ</button>
+                                    <button onclick="location.href='collpase.php';">ПОДРОБНЕЕ</button>
                                 </div>
 
                                 <div class="product">
                                     <img src="img/kvadro.jpg" alt="">
                                     <div class="text">замена масла</div>
-                                    <button onclick="location.href='index.php';">ПОДРОБНЕЕ</button>
+                                    <button onclick="location.href='oil.php';">ПОДРОБНЕЕ</button>
                                 </div>
 
                                 <div class="product">
                                     <img src="img/kvadro.jpg" alt="">
                                     <div class="text">Шиномонтаж</div>
-                                    <button onclick="location.href='index.php';">ПОДРОБНЕЕ</button>
+                                    <button onclick="location.href='tire.php';">ПОДРОБНЕЕ</button>
                                 </div>
 
                                 <div class="product">
                                     <img src="img/kvadro.jpg" alt="">
                                     <div class="text">Эвакуатор</div>
-                                    <button onclick="location.href='index.php';">ПОДРОБНЕЕ</button>
+                                    <button onclick="location.href='truck.php';">ПОДРОБНЕЕ</button>
                                 </div>
 
                            

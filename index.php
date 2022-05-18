@@ -426,7 +426,7 @@ include "nav.php";
                                 <input type="checkbox"> 
                                 <div class="textcheckbox">Подтверждаю согласие на обработку своих <br> персональных данных</div>                   
                             </div>
-                            <button type="submit">Каталог товаров</button>
+                            <button type="submit">Отправить</button>
 
                         </div>
 

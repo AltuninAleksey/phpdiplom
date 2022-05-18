@@ -177,14 +177,14 @@
                                     
                                     <div class="slider">
                                     <div class="slider-for">
-                                    <div class="product1"> <img src="img/bike.jpg"  alt=""> </div>
+                                    <div class="product1"> <img src="img/card.png"  alt=""> </div>
                                     <div class="product1"> <img src="img/kvadro.jpg" alt=""> </div>
                                     <div class="product1"> <img src="img/bike.jpg"  alt=""> </div>
                                    
                                     </div>
 
                                     <div class="slider-nav">
-                                        <div class="product2"> <img src="img/bike.jpg" width="50px" height="auto" alt="">  </div>
+                                        <div class="product2"> <img src="img/card.png" width="50px" height="auto" alt="">  </div>
                                         <div class="product2"> <img src="img/kvadro.jpg" width="50px" height="auto" alt="">  </div>
                                         <div class="product2"> <img src="img/bike.jpg" width="50px" height="auto" alt="">  </div>
                                      
