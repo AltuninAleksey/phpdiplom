@@ -42,17 +42,18 @@ include "nav.php";
                     </div>
                
                     <div class="botblock">
-                        <button onclick="location.href='authorization.php';">
+                        <button onclick="location.href='authorization.php';">  
                         <?php
                     if($_COOKIE['user']==""):
-                    ?>
-                        авторизация</button>
-                    <?php
+                    
+                        echo "авторизация";
+                    
                     else:
                         echo "личный кабинет";
                         
                    endif;
                    ?>
+                   </button>
                     </div>
                    
          

@@ -21,10 +21,17 @@
                 <div class="nav__text" onclick="location.href='index.php';">На главную</div>
                 <div class="nav__text">/</div>
                 <div class="nav__text" onclick="location.href='calculateTo.php';">Калькулятор ТО</div>
+<<<<<<< HEAD
                 <div class="nav__text">/</div>
                 <div class="nav__text" onclick="location.href='repair.php';">Запись на ремонт</div>
                 <div class="nav__text">/</div>
        
+=======
+                <!-- <div class="nav__text">/</div>
+                <div class="nav__text" onclick="location.href='#';">Запись на ремонт</div>
+                <div class="nav__text">/</div>
+                <div class="nav__text" onclick="location.href='#';">Контакты</div> --> 
+>>>>>>> a9d8f0f28eef1d496e5b0e5a83b2ac774c7dc1bd
 
                 <div class="join">
                     <div class="textjoin">Присоединяйтесь: </div>
