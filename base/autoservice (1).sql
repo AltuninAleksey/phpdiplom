@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 23 2022 г., 16:37
+-- Время создания: Май 23 2022 г., 16:50
 -- Версия сервера: 8.0.24
 -- Версия PHP: 7.1.33
 
@@ -33,8 +33,17 @@ CREATE TABLE `automobile` (
   `model` varchar(30) NOT NULL,
   `Year` int NOT NULL,
   `VIN` varchar(30) NOT NULL,
-  `id_user` int NOT NULL
+  `id_user` int UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Дамп данных таблицы `automobile`
+--
+
+INSERT INTO `automobile` (`id`, `mark`, `model`, `Year`, `VIN`, `id_user`) VALUES
+(3, 'daewo', 'matiz', 1983, 'WWzsfsgsg', 4),
+(4, 'daewo', 'Nexia', 1985, 'wafwafwagf', 4),
+(5, 'bmw', 'e34', 2000, 'wwwsafsfgsfg', 5);
 
 -- --------------------------------------------------------
 
@@ -90,9 +99,16 @@ CREATE TABLE `users` (
   `id` int UNSIGNED NOT NULL,
   `login` varchar(50) NOT NULL,
   `pass` varchar(32) NOT NULL,
-  `FIO` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
-  `Automobile` int NOT NULL
+  `FIO` varchar(50) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
+--
+-- Дамп данных таблицы `users`
+--
+
+INSERT INTO `users` (`id`, `login`, `pass`, `FIO`) VALUES
+(4, 'altunin', '123', 'Алтунин Алексей Игоревич'),
+(5, 'kalzhanov', '123', 'Кольжанов Иван Игоревич');
 
 --
 -- Индексы сохранённых таблиц
@@ -131,7 +147,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `automobile`
 --
 ALTER TABLE `automobile`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT для таблицы `evacuator`
@@ -149,7 +165,17 @@ ALTER TABLE `service`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+
+--
+-- Ограничения внешнего ключа сохраненных таблиц
+--
+
+--
+-- Ограничения внешнего ключа таблицы `automobile`
+--
+ALTER TABLE `automobile`
+  ADD CONSTRAINT `automobile_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
