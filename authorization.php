@@ -105,16 +105,59 @@
     <div class="registration">Не зарегистрированы? <a href="">зарегистрироваться</a></div>
     <?php
 else: 
+    include_once "db/db.php";
+    $buf_id=$_COOKIE['user'];
+
+    
+
+    $conn = connect_db();
+    if($conn->connect_error){
+        die("Ошибка: " . $conn->connect_error);
+    }
+    $sql = "SELECT * from `automobile` WHERE id_user=$buf_id";
+    if($result = $conn->query($sql)){
+        $rowsCount = $result->num_rows; // количество полученных строк
+        echo "<table class='table' > <thead>
+                <tr><th> Марка </th><th>модель </th><th> Год </th><th> Вин </th><th> Статус </th></tr>
+                </thead>";
+                
+        foreach($result as $row){
+            echo "	<tbody>
+            <tr>";
+                echo "<td>" . $row["mark"] . "</td>";
+                echo "<td>" . $row["model"] . "</td>";
+                echo "<td>" . $row["Year"] . "</td>";
+                echo "<td>" . $row["VIN"] . "</td>";
+                echo "<td>" . $row["status"] . "</td>";
+            echo "</tbody>
+            </tr>";
+        }
+        echo "</table>";
+        $result->free();
+    } else{
+        echo "Ошибка: " . $conn->error;
+    }
+    $conn->close();
+
+
+
+
+  
+   
 ?>
 <div class="text">
 с подключеникм username <br>
 для выхода <a href="exit.php"> здесь </a>
 
 
+
+
 </div>
 </div>
 
+
 <?php
+
 endif;
 ?>
     

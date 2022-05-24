@@ -12,7 +12,7 @@
         echo "this user not found";
         exit();
     }
-    setcookie('user',$data['login'],time()+3600, "/");
+    setcookie('user',$data['id'],time()+3600, "/");
     header('Location:/');
 
     $connect->close();
