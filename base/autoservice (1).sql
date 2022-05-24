@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Май 23 2022 г., 16:50
+-- Время создания: Май 24 2022 г., 16:03
 -- Версия сервера: 8.0.24
 -- Версия PHP: 7.1.33
 
@@ -28,22 +28,23 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `automobile` (
-  `id` int NOT NULL,
+  `id` int UNSIGNED NOT NULL,
   `mark` varchar(30) NOT NULL,
   `model` varchar(30) NOT NULL,
   `Year` int NOT NULL,
   `VIN` varchar(30) NOT NULL,
-  `id_user` int UNSIGNED NOT NULL
+  `id_user` int UNSIGNED NOT NULL,
+  `status` varchar(15) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Дамп данных таблицы `automobile`
 --
 
-INSERT INTO `automobile` (`id`, `mark`, `model`, `Year`, `VIN`, `id_user`) VALUES
-(3, 'daewo', 'matiz', 1983, 'WWzsfsgsg', 4),
-(4, 'daewo', 'Nexia', 1985, 'wafwafwagf', 4),
-(5, 'bmw', 'e34', 2000, 'wwwsafsfgsfg', 5);
+INSERT INTO `automobile` (`id`, `mark`, `model`, `Year`, `VIN`, `id_user`, `status`) VALUES
+(3, 'Daewo', 'Matiz', 1983, 'WWzsfsgsg', 4, 'В работе'),
+(4, 'Daewo', 'Nexia', 1985, 'wafwafwagf', 4, 'Готов'),
+(5, 'BMW', 'e34', 2000, 'wwwsafsfgsfg', 5, '');
 
 -- --------------------------------------------------------
 
@@ -68,26 +69,40 @@ INSERT INTO `evacuator` (`id`, `adres`, `capacity`, `date`) VALUES
 -- --------------------------------------------------------
 
 --
--- Структура таблицы `service`
+-- Структура таблицы `priceservice`
 --
 
-CREATE TABLE `service` (
+CREATE TABLE `priceservice` (
   `id` int NOT NULL,
   `name` varchar(30) NOT NULL,
   `price` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
--- Дамп данных таблицы `service`
+-- Дамп данных таблицы `priceservice`
 --
 
-INSERT INTO `service` (`id`, `name`, `price`) VALUES
+INSERT INTO `priceservice` (`id`, `name`, `price`) VALUES
 (1, 'ремонт', 500),
 (2, 'Диагностика', 12950),
 (3, 'Подвеска', 8950),
 (4, 'Сход Развал', 10000),
 (5, 'Масло', 5950),
 (6, 'Шиномонтаж', 1950);
+
+-- --------------------------------------------------------
+
+--
+-- Структура таблицы `service`
+--
+
+CREATE TABLE `service` (
+  `id` int NOT NULL,
+  `NameService` varchar(30) NOT NULL,
+  `id_auto` int UNSIGNED NOT NULL,
+  `id_client` int UNSIGNED NOT NULL,
+  `price` int UNSIGNED NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 -- --------------------------------------------------------
 
@@ -128,10 +143,18 @@ ALTER TABLE `evacuator`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Индексы таблицы `priceservice`
+--
+ALTER TABLE `priceservice`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Индексы таблицы `service`
 --
 ALTER TABLE `service`
-  ADD PRIMARY KEY (`id`);
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `id_auto` (`id_auto`),
+  ADD KEY `id_client` (`id_client`);
 
 --
 -- Индексы таблицы `users`
@@ -147,7 +170,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT для таблицы `automobile`
 --
 ALTER TABLE `automobile`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id` int UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT для таблицы `evacuator`
@@ -156,10 +179,16 @@ ALTER TABLE `evacuator`
   MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
+-- AUTO_INCREMENT для таблицы `priceservice`
+--
+ALTER TABLE `priceservice`
+  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+
+--
 -- AUTO_INCREMENT для таблицы `service`
 --
 ALTER TABLE `service`
-  MODIFY `id` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT для таблицы `users`
@@ -176,6 +205,13 @@ ALTER TABLE `users`
 --
 ALTER TABLE `automobile`
   ADD CONSTRAINT `automobile_ibfk_1` FOREIGN KEY (`id_user`) REFERENCES `users` (`id`);
+
+--
+-- Ограничения внешнего ключа таблицы `service`
+--
+ALTER TABLE `service`
+  ADD CONSTRAINT `service_ibfk_1` FOREIGN KEY (`id_auto`) REFERENCES `automobile` (`id`),
+  ADD CONSTRAINT `service_ibfk_2` FOREIGN KEY (`id_client`) REFERENCES `users` (`id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
