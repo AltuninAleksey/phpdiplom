@@ -417,25 +417,24 @@ include "nav.php";
 
                         <div class="aplication">
                             <div class="text">Оставить заявку</div>
+                            <form action="backcall.php" method="post">
+                                <input type="text" name="name" placeholder="Имя">
+                                <input type="text" name="phone"placeholder="Телефон">
+                                <input type="text" name="email" placeholder="E-mail">
 
-                            <input type="text" placeholder="Имя">
-                            <input type="text" placeholder="Телефон">
-                            <input type="text" placeholder="E-mail">
                             
                             <div class="checkbox">
-                                <input type="checkbox"> 
+                                <input type="checkbox" name="check" value="Yes"> 
                                 <div class="textcheckbox">Подтверждаю согласие на обработку своих <br> персональных данных</div>                   
                             </div>
                             <button type="submit">Отправить</button>
+                            </form>
 
                         </div>
 
                     </div>
                 </div>
             </div>
-
-         
-            
 
             <?php
     include "foother.php";
