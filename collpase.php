@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/cardproductCSS.css">
+<title>Сход развал</title>
 
 <?php
     include "nav.php"

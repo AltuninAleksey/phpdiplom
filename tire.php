@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="css/cardproductCSS.css">
-
+<title>Шиномантаж</title>
 <?php
     include "nav.php"
 ?>

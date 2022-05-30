@@ -1,0 +1,184 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+}
+
+nav{
+    position: relative;
+    display: flex;
+    height: 50px;
+    background-color: #2f313d;
+}
+.container{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    max-width: 1500px;
+}
+
+nav .container .main a{
+    text-decoration: none;
+    color: #fff;
+
+}
+
+
+
+
+.sell{
+    position: relative;
+}
+.sell .text{
+    margin-top: 80px;
+    text-align: center;
+   
+}
+.allproduct{
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 50px;
+}
+.sell .text{
+    font-weight: 700;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    font-size: 18pt;
+    margin-bottom: 10px;
+}
+.product img{
+    max-width: 200px;
+    max-height: 200px;
+}
+.allproduct .product{
+    text-align: center;
+}
+
+
+
+
+.tovar{
+    display: block;
+}
+
+.backgroundbody{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 400px;
+    background-color: #414aed;
+    z-index: -1;
+}
+.leftblock{
+    margin-top: 70px;
+}
+.leftblock .name h1{
+    font-size: 40pt;
+}
+.leftblock .info{
+    font-size: 16pt;
+}
+.top_block{
+    color: #fff;
+    height: 400px;
+    display: flex;
+}
+.description{
+    font-size: 15pt;
+    margin-top: 150px;
+    width: 750px;
+    margin-left: 70px;
+}
+.sugest{
+    margin-top: 15px;
+    text-align: center;
+    margin-bottom: 15px;  
+}
+.botblock{
+    position: relative;
+    border-top: solid 2px #000;
+    
+    display: grid;
+    padding-top: 25px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 30px;
+}
+.list-group{
+    text-align: left;
+}
+.blockorganization{
+
+   margin-top: 20px;
+   width: 250px;
+   text-align: center;
+   margin-left: 100px;
+   transition: all 0.5s ease;
+   margin-bottom: 20px;
+   padding-bottom: 10px;   
+}
+
+.blockorganization  .card{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+
+}
+
+.blockorganization .card .btn{
+    float: right;
+}
+
+/* от сюда начинается нижняя часть botblockprovider и тд*/
+.botblockprovider{
+    display: flex;
+    margin-bottom: 100px;
+}
+.botblockprovider .card{
+    height: 300px;
+}
+.botblockprovider .card .btn{
+    float: right;
+}
+.messages{
+    margin-left: 200px;
+    height: 500px;
+}
+
+.inputmessage{
+    margin-top: 44px;
+    margin-left: 300px;
+    width: 300px;
+}
+.sendMessage{
+    margin-top: 44px;
+    float: right;
+}
+
+/*скролбар*/
+.scrollbar-ripe-malinka::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #F5F5F5;
+    border-radius: 10px;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar {
+    width: 12px;
+    background-color: #F5F5F5;
+}
+
+.scrollbar-ripe-malinka::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-image: -webkit-linear-gradient(330deg, #414aed 0%, #414aed 100%);
+   
+}
+/* Само окно сообщений*/
+.example-1 {
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow-y: scroll;
+    height: 400px;
+    width: 700px;
+}

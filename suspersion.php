@@ -1,5 +1,5 @@
 <link rel="stylesheet" href="css/cardproductCSS.css">
-
+<title>Подвеска</title>
 <?php
     include "nav.php"
 ?>

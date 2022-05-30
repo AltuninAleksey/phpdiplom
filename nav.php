@@ -12,7 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="css/nunitosans/nunitosans.css">
-    <title><?php $name ?></title>
 </head>
 <body>
     

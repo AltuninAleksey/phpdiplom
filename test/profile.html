@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>profile</title>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <div class="main"><a href="#">Главная</a></div>
+        </div>
+    
+    </nav>
+    
+    <div class="container">
+		<div class="topblock">
+			<div class="profile">
+				<div class="photoprofile">
+					<img src="img/profile.jpg" alt="#">
+				</div>
+				<div class="name">Антонов Юрий Анатольевич</div>
+				<div class="nameOrganization">BondCompany</div>
+				<div class="email"> <a href="Sergik.Bond@gmail.com"> anatolie.popov3243@gmail.com</a></div>
+				<div class="adress">Bryansk</div>
+			</div>
+			<div class="BuyAndSell">		
+				<div class="tabelbuy">   
+					<h1>Заказы</h1>				
+						<a href="#" >Заказы</a> 
+						<a href="#" class="postav">Поставки</a>
+
+
+
+						<button type="button" class="add btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Добавить</button>
+
+
+	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Добавление</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body">
+			<form>
+			<div class="mb-3">
+				<label for="recipient-name" class="col-form-label">Наименование:</label>
+				<input type="text" class="form-control" id="recipient-name">
+			</div>
+			<div class="mb-3">
+				<label for="type-name" class="col-form-label">Тип продукта:</label><br>
+				<input type="radio" name="answer" value="uslug"> услуга<Br>
+				<input type="radio" name="answer" value="tovar"> товар</p>
+			</div>
+			<div class="mb-3">
+				<label for="Smaldescription-text" class="col-form-label">Краткое описание:</label>
+				<textarea class="form-control" id="Smaldescription-text" maxlength="150"></textarea>
+			</div>
+			<div class="mb-3">
+				<label for="description-text" class="col-form-label">Описание:</label>
+				<textarea class="form-control" id="description-text"maxlength="500"></textarea>
+			</div>
+			<div class="mb-3">
+				<label for="date-name" class="col-form-label">Дата окончания:</label>
+				<input type="date" class="form-control" id="date-name">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">закрыть</button>
+				<p><input type="submit" class="btn btn-primary"></p>
+				
+			</div>
+			</form>
+		
+		
+		</div>
+		</div>
+	</div>
+	</div>
+
+		<select class="filter">
+					<option>Все</option>
+					<option>В ожидании</option>
+					<option>Просроченные</option>
+					<option>В работе</option>
+					<option>Завершенные</option>
+				</select>
+				
+			</div>
+					
+			<div class="scroll-table">
+				<table>
+					<thead>
+						<tr>
+							<th class="th1">#</th>
+							<th class="th2">Название</th>
+							<th class="th3">Количество</th>
+							<th class="th4">Статус</th>
+							<th class="th5">Редактировать</th>
+							<th class="th6">Удалить</th>
+						</tr>
+					</thead>
+				</table>	
+				<div class="scroll-table-body">
+					<table>
+						<tbody>					
+							<tr>						
+								<td class="th1" onclick="location.href='tovar.html'">1</td>
+								<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+								<td class="th3" onclick="location.href='tovar.html'">2</td>
+								<td class="th4" onclick="location.href='tovar.html'">Статус</td>			
+								<td class="th5">Редактировать</td>
+							<td class="th6">Удалить</td>
+							</tr>
+
+							
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+
+						</tbody>
+					</table>
+				</div>	
+			</div>
+			</div>
+		</div>
+
+		<div class="bottomblcok">
+			<div class="nametabel">История покупок</div>
+			<div class="scroll-table">
+				<table>
+					<thead>
+						<tr>
+							<th class="th1">#</th>
+							<th class="th2">Наименование организации</th>
+							<th class="th3">продукт</th>
+							<th class="th4">количество</th>
+							<th class="th5">цена за шт</th>
+							<th class="th6">дата</th>
+						</tr>
+					</thead>
+				</table>	
+				<div class="scroll-table-body">
+					<table>
+					<tbody>					
+							<tr>						
+								<td class="th1" onclick="location.href='tovar.html'">1</td>
+								<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+								<td class="th3" onclick="location.href='tovar.html'">2</td>
+								<td class="th4" onclick="location.href='tovar.html'">Статус</td>			
+								<td class="th5">Редактировать</td>
+							<td class="th6">Удалить</td>
+							</tr>
+
+							
+							<tr>
+								<td class="th1" onclick="location.href='tovar.html'">2</td>
+									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
+									<td class="th3" onclick="location.href='tovar.html'">34</td>
+									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
+								<td class="th5">Редактировать</td>
+								<td class="th6">Удалить</td>
+							</tr>
+							</tbody>
+						</table>
+				</div>
+
+			
+
+		</div>
+
+
+
+</div>
+
+	
+
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

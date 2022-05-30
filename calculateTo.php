@@ -3,6 +3,7 @@
         include "nav.php";
        
     ?>
+    <title>Калькулятор</title>
                 <div class="container">
                 <div class="head">
                     <div class="topblock">

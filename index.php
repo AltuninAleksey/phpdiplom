@@ -2,6 +2,7 @@
 $name = "главная";
 include "nav.php";
 ?>
+<title>Главная</title>
         
             <div class="container">
                 <div class="head">

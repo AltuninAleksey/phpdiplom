@@ -1,7 +1,7 @@
 <?php
     include "nav.php";
 ?>
-
+<title>Каталог</title>
 <link rel="stylesheet" href="css/style_catalog.css">
    <div class="container">
                 <div class="head">

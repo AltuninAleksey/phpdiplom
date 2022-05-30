@@ -1,4 +1,5 @@
 <link rel="stylesheet" href="css/cardproductCSS.css">
+<title>Диагностика</title>
 
 <?php
     include "nav.php"
