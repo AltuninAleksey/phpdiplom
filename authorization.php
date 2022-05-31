@@ -13,7 +13,7 @@
 <nav>
     <div class="container">
         <div class="main"><a href="index.php">Главная</a></div>
-		<div class="exit">  <a href="exit.php">Выйти</a></div>
+		<div class="exit">  <a href="db/exit.php">Выйти</a></div>
     </div>
 
 </nav>
@@ -27,7 +27,7 @@
     <div class="vxod">Вход</div>
     <div class="login">Логин:</div>
 
-    <form action="check.php" method="post">
+    <form action="db/check.php" method="post">
         <input type="text" placeholder="Логин" name="login">
 
         <div class="password" >Пароль:</div>
@@ -75,11 +75,9 @@ while ($row = mysqli_fetch_array($result)) {?>
 
 			<div class="BuyAndSell">		
 				<div class="tabelbuy">   
-					<h1>Заказы</h1>				
-						<a href="#" >Заказы</a> 
-						<a href="#" class="postav">Поставки</a>
-
-
+					<h1>Автомобили</h1>				
+						<!-- <a href="#" >Заказы</a> 
+						<a href="#" class="postav">Поставки</a> -->
 
 						<button type="button" class="add btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Добавить</button>
 
@@ -91,32 +89,33 @@ while ($row = mysqli_fetch_array($result)) {?>
 			<h5 class="modal-title" id="exampleModalLabel">Добавление</h5>
 			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 		</div>
+		
 		<div class="modal-body">
-			<form>
+			<form action="db/addauto.php" method="post">
 			<div class="mb-3">
-				<label for="recipient-name" class="col-form-label">Наименование:</label>
-				<input type="text" class="form-control" id="recipient-name">
+				<label for="recipient-name" class="col-form-label">Марка:</label>
+				<input type="text" name="mark" class="form-control" id="recipient-name">
 			</div>
+
 			<div class="mb-3">
-				<label for="type-name" class="col-form-label">Тип продукта:</label><br>
-				<input type="radio" name="answer" value="uslug"> услуга<Br>
-				<input type="radio" name="answer" value="tovar"> товар</p>
+				<label for="recipient-name" class="col-form-label">Модель:</label>
+				<input type="text" name="model" class="form-control" id="recipient-name">
 			</div>
+
 			<div class="mb-3">
-				<label for="Smaldescription-text" class="col-form-label">Краткое описание:</label>
-				<textarea class="form-control" id="Smaldescription-text" maxlength="150"></textarea>
+				<label for="recipient-name" class="col-form-label">Год производства:</label>
+				<input type="text" name="year" class="form-control" id="recipient-name">
 			</div>
+
 			<div class="mb-3">
-				<label for="description-text" class="col-form-label">Описание:</label>
-				<textarea class="form-control" id="description-text"maxlength="500"></textarea>
+				<label for="recipient-name" class="col-form-label">Вин номер:</label>
+				<input type="text" name="vin" class="form-control" id="recipient-name">
 			</div>
-			<div class="mb-3">
-				<label for="date-name" class="col-form-label">Дата окончания:</label>
-				<input type="date" class="form-control" id="date-name">
-			</div>
+			
 			<div class="modal-footer">
 				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">закрыть</button>
-				<p><input type="submit" class="btn btn-primary"></p>
+				<button type="submit" class="btn btn-primary" data-bs-dismiss="modal">добавить</button>
+				
 				
 			</div>
 			</form>
@@ -237,9 +236,6 @@ while ($row = mysqli_fetch_array($result)) {?>
 				</div>
 		</div>
 </div>
-
-
-
 
 
 <?php

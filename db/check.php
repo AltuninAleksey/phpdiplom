@@ -1,5 +1,5 @@
 <?php
-    include_once "db/db.php";
+    include_once "db.php";
 
     $login = (trim($_POST['login']));
     $pass = (trim($_POST['pass']));
