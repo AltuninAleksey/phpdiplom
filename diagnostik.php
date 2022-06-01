@@ -198,9 +198,11 @@
                                             <div class="price">
                                                от 12 950 руб.
                                             </div>
-                                            <div class="count_button">
-                                           
-                                                <button>оставить заявку</button>
+                                            <div class="count_button">  
+                                                <form action="choseauto.php" method="post">
+                                    
+                                                <button type="submit" name = "diagnostik" value="Диагностика">оставить заявку</button>
+                                                </form>
                                             </div>
 
                                             <div class="conectus">
