@@ -39,6 +39,7 @@
 							echo "<td>" . $row["VIN"] . "</td>";
                             echo "<td> <form action='db/createservice.php' method='post'>
                                     <input type='text' hidden  name='service' value='$_POST[diagnostik]' >
+									<input type='text' hidden  name='price' value='$_POST[price]' >
                                     <button type='submit' name='id_auto' value='$row[id_auto]'>выбрать</button> 
                               </form> </td>";
 							echo "</tr>";

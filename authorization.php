@@ -169,7 +169,7 @@ while ($row = mysqli_fetch_array($result)) {?>
 			</div>
 
 		<div class="bottomblcok">
-			<div class="nametabel">История покупок</div>
+			<div class="nametabel">Работы</div>
 			<div class="scroll-table">
 				<table>
 					<thead>

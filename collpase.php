@@ -200,7 +200,10 @@
                                             </div>
                                             <div class="count_button">
                                            
-                                                <button>оставить заявку</button>
+                                            <form action="choseauto.php" method="post">
+                                                <input type="text" hidden name="price" value='10 000'>
+                                                <button type="submit" name = "diagnostik" value="Сход развал">оставить заявку</button>
+                                                </form>
                                             </div>
 
                                             <div class="conectus">
