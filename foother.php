@@ -1,12 +1,20 @@
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+
+<script type="text/javascript" src="slick/slick.min.js"></script>
+
+
 <footer>
                 <div class="container">
                     <div class="leftblock">
                         <div class="topblock">
                             <div class="logo"></div>
-                            <div class="text">Автосервис где ремонтируют автомобили и мотоциклы!</div>
+                            <div class="text">Автосервис 32</div>
                         </div>
                         <div class="bottext">
-                            © «4 такта» 2020. Все права защищены. Использование информации возможно только с письменного согласования владельцев интернет-ресурса
+                            © «Автосервис 32» 2022. Все права защищены. Использование информации возможно только с письменного согласования владельцев интернет-ресурса
                         </div>
                     </div>
                     <div class="rightblock">
