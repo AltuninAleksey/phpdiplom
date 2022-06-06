@@ -141,11 +141,20 @@
                                                 <div class="text">Сход развал</div>
                                                 
                                             <div class="price">
-                                               от 10 000 руб.
+                                               от 5 000 руб.
                                             </div>
-                                            <div class="count_button">
-                                           
-                                                <button>оставить заявку</button>
+                                            <div class="count_button">  
+                                                <form action="choseauto.php" method="post">
+                                                <input hidden type="text" name="price" value="5000">
+                                                <?php
+                                                    if($_COOKIE['user']!=""):
+                                                    echo"<br> <button type='submit' name= 'service' value='Сход развал'> оставить заявку</button>";
+                                                    else:          
+                                                        echo"<br>создание заказа доступно только авторизованным пользователям 
+                                                        </form>" ;
+                                                    endif;
+                                                ?>
+                                                </form>
                                             </div>
 
                                             <div class="conectus">

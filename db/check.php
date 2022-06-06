@@ -2,7 +2,7 @@
     include_once "db.php";
 
     $login = (trim($_POST['login']));
-    $pass = (trim($_POST['pass']));
+    $pass = md5(trim($_POST['pass']));
 
 
     $connect=connect_db();

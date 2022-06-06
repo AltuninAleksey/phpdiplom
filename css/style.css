@@ -282,6 +282,7 @@ fieldset .count{
 
 
 .benefits{
+    margin-right: 15px;
     display: flex;
     margin-top: 60px;
     width: 100%;
@@ -292,14 +293,10 @@ fieldset .count{
 }
 
 .benefits .block{
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 30px;
     display: flex;
-}
-.benefits .block:first-child{
-    margin-left: 30px;
-}
-.benefits .block:last-child{
-    margin-right: 0px;
 }
 
 .benefits .block .redcircle{
@@ -310,6 +307,7 @@ fieldset .count{
     border-radius: 50%;
 }
 .benefits .alltext{
+    width: auto;
     margin-left: 13px;
 }
 .benefits .maintext{
@@ -562,7 +560,7 @@ footer .container .topblock .text{
         .page1 .menu{
             display: none;
         }
-        .benefits .block:first-child {
+        .benefits .block {
             margin-left: 15px;
         }
         .benefits{
@@ -619,7 +617,5 @@ footer .container .topblock .text{
     .benefits{
         height: 150px;
     }
-    .benefits .block:first-child{
-        margin-left: 5px;
-    }
+  
 }

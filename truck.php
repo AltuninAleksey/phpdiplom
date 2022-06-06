@@ -144,7 +144,14 @@
                                             </div>
                                             <div class="count_button">
                                            
-                                                <button>оставить заявку</button>
+                                            <?php
+                                                    if($_COOKIE['user']!=""):
+                                                    echo"<br> <button type='submit' name= 'service' value='Эвакуатор'> оставить заявку</button>";
+                                                    else:          
+                                                        echo"<br>создание заказа доступно только авторизованным пользователям 
+                                                        </form>" ;
+                                                    endif;
+                                                ?>
                                             </div>
 
                                             <div class="conectus">

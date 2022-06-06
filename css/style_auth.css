@@ -13,7 +13,13 @@ nav .container{
     margin-top: 15px;
     display: flex;
 }
-
+.registration{
+    
+}
+.registration:hover{
+    cursor: pointer;
+    
+}
 
 nav .container .main a{
     text-decoration: none;
@@ -96,6 +102,7 @@ nav .container .exit a{
  }
  
 .filter{
+    display: none;
     float: right;
     margin-bottom: 15px;   
 }
@@ -130,12 +137,15 @@ nav .container .exit a{
 .th4{
     width: 353px;
 }
-
+.btn-primary{
+    margin-bottom: 20px;
+}
 
 .scroll-table table {
 	width:100%;
 	border: none;
 }
+
 .scroll-table thead th {
 	font-weight: bold;
 	border: none;
@@ -401,5 +411,18 @@ nav .container .exit a{
 .mainblock .registration a{
     text-decoration: none;
 }
+.table-bottom{
+    width: 100%;
+    margin-bottom: 50px;
+}
+.sort_button{
+    width: 120px;
+}
 
+@media(max-width:780px) {
+    .profile{
+        display: none;
+    }
+    
+}
 /*Start Profile*/

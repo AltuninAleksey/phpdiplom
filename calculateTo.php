@@ -5,16 +5,17 @@
     <title>Калькулятор</title>
     <div class="container">
          
-        <form action="ChoseAutoCalculate.php" method="POST">
+        <form action="choseauto.php" method="POST">
            <h4> Выберите страну производителя автомобиля :</h4> <br>
 
             <input type="radio"  id="inomarka" name='country' value='1.5'>Иномарка    
             <input type="radio"  id="russian"  name='country' value='1.2'>Отечественный<br><br><br>
          
             <h5>Выберите необходимый перечень работ</h5> <br>
-            <input type="checkbox" id="filter" name='filter'value='200'>Замены фильтра<br>
-            <input type="checkbox" id="oil" name='antifreze'value='1200'>Замены масла<br>
-            <input type="checkbox" id="antifreze" name='antifreze'value='1500'>Замена антифриз<br>
+            <input type="checkbox" id="filter" name='filter'value='200'>Замена воздушного фильтра<br>
+            <input type="checkbox" id="oil" name='oil'value='1200'>Замена масла<br>
+            <input type="checkbox" id="antifreze" name='antifreze'value='1500'>Замена антифриза<br>
+            <input type="text" hidden name ="service" value="Тех осмотр">
             <div class="text_result" id="text_result" name='result' >0 рублей</div>
      
 <?php

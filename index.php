@@ -165,8 +165,8 @@ include "nav.php";
                 </div>
                 <div class="container">
                     <div class="benefits">
+
                         <div class="block">
-                            
                             <div class="redcircle">
                                 <svg
                                     width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -215,7 +215,7 @@ include "nav.php";
                             </div>
                             <div class="alltext">
                                 <div class="maintext">Быстрая доставка</div>
-                                <div class="text">Доставка в любой регион
+                                <div class="text">Доставка в <br> любой регион
                                 </div>
 
                             </div>
@@ -269,7 +269,7 @@ include "nav.php";
                             </div>
                             <div class="alltext">
                                 <div class="maintext">Доступные цены</div>
-                                <div class="text"> Доступная стоимость на товары 
+                                <div class="text"> Доступная стоимость <br> на товары 
                                 </div>
 
                             </div>

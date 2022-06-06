@@ -1,5 +1,5 @@
 <?php
-include "db/db.php";
+include "db.php";
     $link=connect_db();
     if(isset($_POST["check"]) &&isset($_POST["name"]) && isset($_POST["phone"]) ){
        $name=trim($_POST["name"]);
@@ -16,7 +16,7 @@ include "db/db.php";
         <script type="text/javascript">
             alert("Данные успешо отправлены, мы свяжемся с вами в ближайшее время");
          
-            window.location.href = 'index.php';
+            window.location.href = '../index.php';
         
         </script>
         
@@ -24,7 +24,7 @@ include "db/db.php";
  
     }
     else{
-        header("Location: 404.php");
+        header("Location: ../404.php");
     }
 
 ?>

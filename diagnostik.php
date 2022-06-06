@@ -145,8 +145,15 @@
                                             </div>
                                             <div class="count_button">  
                                                 <form action="choseauto.php" method="post">
-                                    
-                                                <button type="submit" name = "diagnostik" value="Диагностика">оставить заявку</button>
+                                                <input hidden type="text" name="price" value="12900">
+                                                <?php
+                                                    if($_COOKIE['user']!=""):
+                                                    echo"<br> <button type='submit' name= 'service' value='Диагностика'> оставить заявку</button>";
+                                                    else:          
+                                                        echo"<br>создание заказа доступно только авторизованным пользователям 
+                                                        </form>" ;
+                                                    endif;
+                                                ?>
                                                 </form>
                                             </div>
 

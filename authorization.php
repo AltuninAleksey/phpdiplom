@@ -38,7 +38,77 @@
 
 
     <div class="forgotpassword"><a href="#" >Забыли пароль?</a></div> 
-    <div class="registration">Не зарегистрированы? <a href="">зарегистрироваться</a></div>
+    <div class="registration">Не зарегистрированы? <a class='registration'  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">зарегистрироваться</a></div>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+		<div class="modal-header">
+			<h5 class="modal-title" id="exampleModalLabel">Добавление нового пользователя</h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		
+		<div class="modal-body">
+			<form action="db/addusers.php" method="post">
+			<div class="mb-3">
+				<label for="recipient-name" class="col-form-label">Логин:</label>
+				<input type="text" name="login" class="form-control" id="recipient-name">
+			</div>
+
+			<div class="mb-3">
+				<label for="recipient-name" class="col-form-label">пароль:</label>
+				<input type="text" name="pass" class="form-control" id="recipient-name">
+			</div>
+
+			<div class="mb-3">
+				<label for="recipient-name" class="col-form-label">ФИО:</label>
+				<input type="text" name="FIO" class="form-control" id="recipient-name">
+			</div>
+
+			<div class="mb-3">
+				<label for="recipient-name" class="col-form-label">e-mail:</label>
+				<input type="text" name="email" class="form-control" id="recipient-name">
+			</div>
+			
+			<div class="modal-footer">
+				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">закрыть</button>
+				<button type="submit" class="btn btn-primary" data-bs-dismiss="modal">добавить</button>	
+			</div>
+			</form>
+		</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <?php
 else: 
@@ -76,54 +146,47 @@ while ($row = mysqli_fetch_array($result)) {?>
 			<div class="BuyAndSell">		
 				<div class="tabelbuy">   
 					<h1>Автомобили</h1>				
-						<!-- <a href="#" >Заказы</a> 
-						<a href="#" class="postav">Поставки</a> -->
-
-						<button type="button" class="add btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Добавить</button>
+					<button type="button" class="add btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Добавить</button>
 
 
 	<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-	<div class="modal-dialog">
-		<div class="modal-content">
-		<div class="modal-header">
-			<h5 class="modal-title" id="exampleModalLabel">Добавление</h5>
-			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-		</div>
-		
-		<div class="modal-body">
-			<form action="db/addauto.php" method="post">
-			<div class="mb-3">
-				<label for="recipient-name" class="col-form-label">Марка:</label>
-				<input type="text" name="mark" class="form-control" id="recipient-name">
-			</div>
-
-			<div class="mb-3">
-				<label for="recipient-name" class="col-form-label">Модель:</label>
-				<input type="text" name="model" class="form-control" id="recipient-name">
-			</div>
-
-			<div class="mb-3">
-				<label for="recipient-name" class="col-form-label">Год производства:</label>
-				<input type="text" name="year" class="form-control" id="recipient-name">
-			</div>
-
-			<div class="mb-3">
-				<label for="recipient-name" class="col-form-label">Вин номер:</label>
-				<input type="text" name="vin" class="form-control" id="recipient-name">
+		<div class="modal-dialog">
+			<div class="modal-content">
+			<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Добавление</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
 			</div>
 			
-			<div class="modal-footer">
-				<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">закрыть</button>
-				<button type="submit" class="btn btn-primary" data-bs-dismiss="modal">добавить</button>
+			<div class="modal-body">
+				<form action="db/addauto.php" method="post">
+				<div class="mb-3">
+					<label for="recipient-name" class="col-form-label">Марка:</label>
+					<input type="text" name="mark" class="form-control" id="recipient-name">
+				</div>
+
+				<div class="mb-3">
+					<label for="recipient-name" class="col-form-label">Модель:</label>
+					<input type="text" name="model" class="form-control" id="recipient-name">
+				</div>
+
+				<div class="mb-3">
+					<label for="recipient-name" class="col-form-label">Год производства:</label>
+					<input type="text" name="year" class="form-control" id="recipient-name">
+				</div>
+
+				<div class="mb-3">
+					<label for="recipient-name" class="col-form-label">Вин номер:</label>
+					<input type="text" name="vin" class="form-control" id="recipient-name">
+				</div>
 				
-				
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">закрыть</button>
+					<button type="submit" class="btn btn-primary" data-bs-dismiss="modal">добавить</button>	
+				</div>
+				</form>
 			</div>
-			</form>
-		
-		
+			</div>
 		</div>
-		</div>
-	</div>
 	</div>
 
 		<select class="filter">
@@ -168,72 +231,68 @@ while ($row = mysqli_fetch_array($result)) {?>
 			</div>
 			</div>
 
+			<?  
+			    $conn = connect_db();
+				if($conn->connect_error){
+					die("Ошибка: " . $conn->connect_error);
+				}
+				
+				$order = "SELECT service.*,automobile.*,service.status AS status_service FROM service JOIN automobile ON automobile.id=service.id_auto  WHERE id_client=$_COOKIE[user] ";
+				$result = mysqli_query($conn, $order);
+			
+			?>
 		<div class="bottomblcok">
-			<div class="nametabel">История покупок</div>
-			<div class="scroll-table">
-				<table>
+			<div class="nametabel">Заказы</div>
+				<form action="authorization.php" method='GET'>
+					<table class="scroll-table table-bottom">
+					<select class="" name='status'>
+					<option value='all' >Все</option>
+					<option value='В работе' >В работе</option>
+					<option value='готов' >Готовые</option>
+					<option value='Завершен' >Завершен</option>
+					</select>
+					<button class='add btn-primary sort_button' type='submit'>Отсортировать</button>
+				</form>				
 					<thead>
 						<tr>
-							<th class="th1">#</th>
-							<th class="th2">Наименование организации</th>
-							<th class="th3">продукт</th>
-							<th class="th4">количество</th>
-							<th class="th5">цена за шт</th>
-							<th class="th6">дата</th>
+							<th class="tx1">Наименование услуги</th>
+							<th class="tx2">Марка</th>
+							<th class="tx3">Модель</th>
+							<th class="tx4">VIN</th>
+							<th class="tx5">Стоимость</th>
+							<th class="tx6">Статус</th>
+							<th class="tx6">Дата</th>
 						</tr>
 					</thead>
-				</table>	
-				<div class="scroll-table-body">
-					<table>
 					<tbody>					
-							<tr>						
-								<td class="th1" onclick="location.href='tovar.html'">1</td>
-								<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
-								<td class="th3" onclick="location.href='tovar.html'">2</td>
-								<td class="th4" onclick="location.href='tovar.html'">Статус</td>			
-								<td class="th5">Редактировать</td>
-							<td class="th6">Удалить</td>
-							</tr>
-	
-							<tr>
-								<td class="th1" onclick="location.href='tovar.html'">2</td>
-									<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
-									<td class="th3" onclick="location.href='tovar.html'">34</td>
-									<td class="th4" onclick="location.href='tovar.html'">Статус</td>
-								<td class="th5">Редактировать</td>
-								<td class="th6">Удалить</td>
-							</tr>
-
-							<tr>						
-								<td class="th1" onclick="location.href='tovar.html'">1</td>
-								<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
-								<td class="th3" onclick="location.href='tovar.html'">2</td>
-								<td class="th4" onclick="location.href='tovar.html'">Статус</td>			
-								<td class="th5">Редактировать</td>
-							<td class="th6">Удалить</td>
-							</tr>
-
-							<tr>						
-								<td class="th1" onclick="location.href='tovar.html'">1</td>
-								<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
-								<td class="th3" onclick="location.href='tovar.html'">2</td>
-								<td class="th4" onclick="location.href='tovar.html'">Статус</td>			
-								<td class="th5">Редактировать</td>
-							<td class="th6">Удалить</td>
-							</tr>
-
-							<tr>						
-								<td class="th1" onclick="location.href='tovar.html'">1</td>
-								<td class="th2" onclick="location.href='tovar.html'">Антонов Иван Федорович</a></td>
-								<td class="th3" onclick="location.href='tovar.html'">2</td>
-								<td class="th4" onclick="location.href='tovar.html'">Статус</td>			
-								<td class="th5">Редактировать</td>
-							<td class="th6">Удалить</td>
-							</tr>
-		
-							</tbody>
+					<?php foreach($result as $row){
+						if(!isset($_GET["status"])||$_GET["status"]==='all'){
+							echo "<tr>";
+							echo "<td>" . $row["NameService"] . "</td>";
+							echo "<td>" . $row["mark"] . "</td>";
+							echo "<td>" . $row["model"] . "</td>";
+							echo "<td>" . $row["VIN"]  .  "</td>";
+							echo "<td>" . $row["price"] . " рублей</td>";
+							echo "<td>" . $row["status_service"] . "</td>";
+							echo "<td>" . $row["date"] . "</td>";
+							echo "</tr>";
+						}
+						if(mb_strtolower(trim($row["status_service"]))==mb_strtolower(trim($_GET["status"]))&& isset($_GET["status"])){
+							echo "<tr>";
+							echo "<td>" . $row["NameService"] . "</td>";
+							echo "<td>" . $row["mark"] . "</td>";
+							echo "<td>" . $row["model"] . "</td>";
+							echo "<td>" . $row["VIN"]  .  "</td>";
+							echo "<td>" . $row["price"] . " рублей</td>";
+							echo "<td>" . $row["status_service"] . "</td>";
+							echo "<td>" . $row["date"] . "</td>";
+							echo "</tr>";
+						}
+						}
+						?>			
+						</tbody>
 						</table>
-				</div>
+			
 		</div>
 </div>
 

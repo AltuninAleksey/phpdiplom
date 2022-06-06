@@ -142,9 +142,18 @@
                                             <div class="price">
                                                от 5 950 руб.
                                             </div>
-                                            <div class="count_button">
-                                           
-                                                <button>оставить заявку</button>
+                                            <div class="count_button">  
+                                                <form action="choseauto.php" method="post">
+                                                <input hidden type="text" name="price" value="5950">
+                                                <?php
+                                                    if($_COOKIE['user']!=""):
+                                                    echo"<br> <button type='submit' name= 'service' value='Замена масла'> оставить заявку</button>";
+                                                    else:          
+                                                        echo"<br>создание заказа доступно только авторизованным пользователям 
+                                                        </form>" ;
+                                                    endif;
+                                                ?>
+                                                </form>
                                             </div>
 
                                             <div class="conectus">
